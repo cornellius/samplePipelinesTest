@@ -13,7 +13,7 @@ resources:
       isPull: false
     #make sure this seed version exists in your registry account
     seed:
-      versionName: master.16
+      versionName: master.17
 
 # Docker Image Options for VISUALIZER
   - name: dv-img-opts
@@ -35,7 +35,7 @@ resources:
 # add TEST env - AWS cluster
   - name: env-test-ecs
     type: cluster
-    integration: amazon-ecs
+    integration: "amazon-ecs"
     pointer:
       sourceName : "gindumac-frankfurt"
       region: "eu-central-1"
